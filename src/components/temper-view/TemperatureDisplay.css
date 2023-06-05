@@ -1,0 +1,108 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app-container {
+    height: 400px;
+    width: 300px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+}
+
+.temperature-display-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.line-minus-temperature {
+    display: block;
+    width: 20px;
+    height: 6px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 52px;
+    left: 54px;
+    transform: rotate(135deg);
+}
+
+.line-plus-temperature {
+    display: block;
+    width: 20px;
+    height: 6px;
+    background-color: #000000;
+    position: absolute;
+    bottom: 52px;
+    right: 54px;
+    transform: rotate(45deg);
+}
+
+.temperature-display {
+    display: flex;
+    border-radius: 50%;
+    color: #ffffff;
+    height: 220px;
+    width: 220px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    background-color: #ffffff;
+    border: 3px #000000 solid;
+    transition: background 0.5s;
+}
+
+.temper-amount-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.neutral {
+    background: rgb(184, 184, 184);
+}
+
+.temperature-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.line-target {
+    position: absolute;
+    width: 5px;
+    height: 39%;
+    top: 50%;
+    background: black;
+    transform-origin: top;
+}
+
+.line-min {
+    transform: rotate(0deg);
+}
+
+.line-max {
+    transform: rotate(180deg);
+}
+
+.target-temperature {
+    margin-top: 10px;
+    font-size: 20px;
+}
